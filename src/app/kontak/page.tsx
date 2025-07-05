@@ -15,8 +15,12 @@ const Kontak = () => {
 
     if (form.current) {
       emailjs
-        .sendForm('service_o12y0v8', 'template_ymt81wd', form.current, 'VEDsaRRj16_7KILZV')
-        .then(() => {
+        .sendForm(
+            'service_o12y0v8', 
+            'template_ymt81wd', 
+            form.current, 
+            'VEDsaRRj16_7KILZV'
+        ).then(() => {
           alert('Message sent successfully!');
           form.current?.reset();
         }, (error) => {
