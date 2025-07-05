@@ -4,7 +4,6 @@ import React, { useEffect, useState, useMemo } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { useIsMobile } from '@/hooks/use-mobile';
 import { useScrollOptimized } from '@/hooks/useScrollOptimized';
 import { NAVIGATION_ITEMS, LOGO_CONFIG, SCROLL_CONFIG } from '@/lib/constants';
 
@@ -23,7 +22,6 @@ interface LogoItem {
 
 export const Header: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const isMobile = useIsMobile();
   const pathname = usePathname();
   const { isVisible } = useScrollOptimized({ 
     threshold: SCROLL_CONFIG.headerHideThreshold 

@@ -17,7 +17,7 @@ export const VisionMissionSection: React.FC = () => {
             that systematically develops, refines, and prepares the competencies of MBC 
             Laboratory assistants to compete effectively in the professional and industrial sectors.
           </p>
-          <p className="mt-4 sm:mt-6 text-center italic text-sm sm:text-base md:text-lg lg:text-xl">"Inspirasi dari Legenda Gatot Kaca dan Kawah Candradimuka"</p>
+          <p className="mt-4 sm:mt-6 text-center italic text-sm sm:text-base md:text-lg lg:text-xl">&ldquo;Inspirasi dari Legenda Gatot Kaca dan Kawah Candradimuka&rdquo;</p>
           <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-700">
             <p className="text-[rgba(125,125,125,1)] leading-relaxed sm:leading-loose md:leading-[50px] mt-4 sm:mt-6 md:mt-8 lg:mt-[30px] text-justify my-0 font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
               To foster an environment that supports long-term learning and research, promotes 
@@ -26,8 +26,8 @@ export const VisionMissionSection: React.FC = () => {
               benefits students in their academic and professional journeys.
             </p>
             <blockquote className="mt-4 sm:mt-6 text-center italic text-sm sm:text-base md:text-lg lg:text-xl">
-              "Work Life Balance bukan berarti melakukan sesuatu secara singkat
-              namun efektif"
+              &ldquo;Work Life Balance bukan berarti melakukan sesuatu secara singkat
+              namun efektif&rdquo;
             </blockquote>
           </div>
         </div>

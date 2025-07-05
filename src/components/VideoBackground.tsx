@@ -13,19 +13,12 @@ export const VideoBackground: React.FC<VideoBackgroundProps> = ({
   children,
   className = ''
 }) => {
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
 
   // Convert YouTube URL to embed URL for autoplay
   const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&playsinline=1&enablejsapi=0`;
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVideoLoaded(true);
-    }, 1000);
 
-    return () => clearTimeout(timer);
-  }, []);
 
   const handleVideoError = () => {
     setHasError(true);
